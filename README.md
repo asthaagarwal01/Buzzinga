@@ -6,7 +6,7 @@ Languages : HTML , CSS, Javascript
 
 Features:
 
-- The user is required to enter the task and timi limit (in mins)
+- The user is required to enter the task and time limit (in mins)
 
 - As the start button is clicked , the timer starts
 

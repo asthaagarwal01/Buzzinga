@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Buzzinga
+        </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <img src="images/material-symbols_alarm-on.png">
+                <p>BUZZINGA</p>
+            </header>
+
+            <div class="content">
+                <p class="heading"><span>Falling</span> Behind ?</p>
+                <p class="sub">Well not anymore<br>Set your task and buckle up<img src="images/check-mark-button_2705.png"></p>
+                <input id="in1" placeholder="Enter your task" type="text" required>
+                <input id="in2" placeholder="Enter time limit (mins)" type="number" required>
+                <div class="clock">
+                    <p id="mins">00</p>
+                    <p>:</p>
+                    <p id="secs">00</p>
+                </div>
+                <button onclick="start()">START</button>
+                
+                <p id="work"></p>
+               
+                
+            </div>
+        </div>
+        <script type="text/javascript">
+            var sec=document.getElementById("secs");
+            var min=document.getElementById("mins");
+            var s=00;
+            var m=00;
+            
+            document.write(mi);
+            var intr;
+            function start()
+            {
+              clearInterval(intr);
+              intr=setInterval(clock,1000);
+              
+            }
+
+            function stop()
+            {
+                clearInterval(intr);
+                var str=document.getElementById("in1").value;
+                document.getElementById("work").innerHTML="Time's UP !! Stop "+str;
+                
+                const sound = new Audio() 
+                sound.src = "audio/Google-Duo.mp3"; 
+                sound.play() 
+            } 
+            
+
+
+function clock()
+{
+    var mi=document.getElementById("in2").value;
+    s++;
+    
+    if(s<9)
+    sec.innerHTML="0"+s;
+    else if(s>9 && s<=60)
+    sec.innerHTML=s;
+    else if(s>60)
+    {
+        s=0;
+        sec.innerHTML="0"+s;
+        m++;
+        
+        if(m<9)
+        {
+            min.innerHTML="0"+m;
+            if(m==mi)
+            stop();
+        }
+        
+        else if(m>9 && m<=60)
+        {
+            min.innerHTML=m;
+            if(m==mi)
+            stop();
+        }
+
+    }
+
+}
+        </script>
+    </body>
+</html>

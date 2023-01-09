@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    background-color: #F0FDFD;
+    height: 100vh;
+    width: 100%;
+}
+
+header
+{
+    padding: 30px 30px;
+    display: flex;
+}
+
+header img
+{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+
+header p
+{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.content
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+.heading
+{
+    font-size: 63px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    color: #0E1389;
+    
+}
+
+.heading span
+{
+    background: linear-gradient(92.44deg, #E7D216 0.77%, #4F4700 42.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.sub
+{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #008989;
+    padding: 20px;
+}
+
+.sub img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.content input::placeholder
+{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    
+    color: #9E9E9E;
+    font-size: 18px;
+}
+
+.content input
+{
+    border: none;
+    border-radius: 11px;
+    padding: 13px;
+    border: 2px solid rgb(100, 100, 100);
+    width: 180px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-size: 18px;
+    margin: 20px;
+    display: block;
+    margin-left: 670px;
+}
+
+.clock 
+{
+    margin: 20px;
+    display: flex;
+    margin-left: 680px;
+}
+
+.clock p
+{
+    font-family: 'Digital Numbers';
+    font-style: normal;
+    font-weight: 400;
+    color: #0A5204;
+    font-size: 50px;
+    padding: 10px;
+}
+
+button
+{
+    background: #FFF961;
+    border: 2px solid black;
+    padding: 5px 30px;
+    border-radius: 13px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    filter: drop-shadow(-2px 13px 14px #FFFEE8);
+}
+
+#work
+{
+    padding: 20px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+

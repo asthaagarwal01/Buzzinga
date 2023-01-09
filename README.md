@@ -11,3 +11,5 @@ Features:
 - As the start button is clicked , the timer starts
 
 - When the time is elapsed , a buzzer sort of alert plays automatically and an alert is generated to stop doing the task 
+
+![Buzzinga](https://user-images.githubusercontent.com/86525559/211266068-5b9b9fd0-9399-483d-9fdf-0e890c58a0a2.png)
